@@ -5,13 +5,12 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// O Render injeta a porta automaticamente
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 10000;
 
 app.get('/', (req, res) => {
-    res.send('API do Gestor Tecnico rodando com sucesso!');
+    res.send('API do Gestor Tecnico a correr com sucesso no Render!');
 });
 
 app.listen(PORT, () => {
-    console.log(`Servidor rodando na porta ${PORT}`);
+    console.log(`Servidor a correr na porta ${PORT}`);
 });
